@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>FluentBridge Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            FluentBridge
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+            ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+
+    <main>
+        <section id="home">
+            <h1>Speak English with Confidence</h1>
+            <p>
+                Improve your English skills
+                and unlock new opportunities.
+            </p>
+            <a href="#courses">Explore Courses</a>
+        </section>
+
+        
+<section id="courses">
+    <h2>Our Courses</h2>
+    <p>Find the right course for your goals.</p>
+
+    <div class="course-container">
+        <article class="course-card">
+            <h3>General English</h3>
+            <p>Improve your everyday English skills.</p>
+        </article>
+
+        <article class="course-card">
+            <h3>IELTS Preparation</h3>
+            <p>Build confidence for the IELTS exam.</p>
+        </article>
+
+        <article class="course-card">
+            <h3>Business English</h3>
+            <p>Communicate effectively at work.</p>
+        </article>
+    </div>
+</section>
+
+
+        
+<section id="about">
+    <h2>Why Choose Us?</h2>
+    <p>Discover a better way to learn English.</p>
+
+    <div class="features-container">
+        <article class="feature-card">
+            <h3>Personalized Learning</h3>
+            <p>Lessons designed around your goals.</p>
+        </article>
+
+        <article class="feature-card">
+            <h3>Flexible Schedule</h3>
+            <p>Learn at a pace that suits you.</p>
+        </article>
+
+        <article class="feature-card">
+            <h3>Practical Lessons</h3>
+            <p>Build skills for real-life communication.</p>
+        </article>
+    </div>
+</section>
+
+
+        
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question? Send us a message!</p>
+
+    <form id="contact-form">
+        <label for="name">Your Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+        >
+
+        <label for="email">Your Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
+
+        <label for="message">Your Message</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="form-status" role="status"></p>
+    </form>
+</section>
+
+    </main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>FluentBridge Academy</h3>
+        <p>Speak English with Confidence.</p>
+
+        <p class="footer-note">
+            A fictional website created for
+            a frontend development portfolio.
+        </p>
+
+        <p>&copy; 2026 FluentBridge Academy</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

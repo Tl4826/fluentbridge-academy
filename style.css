@@ -1,0 +1,297 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #14213d;
+}
+
+header {
+    background-color: #14213d;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#home {
+    background-color: #eaf4ff;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 40px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#courses, #about, #contact {
+    padding: 50px 30px;
+}
+
+#courses {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.course-card {
+    background-color: #f0f7ff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #dbeafe;
+}
+
+.course-card h3 {
+    color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+#about {
+    text-align: center;
+    background-color: #f8fbff;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #dbeafe;
+}
+
+.feature-card h3 {
+    color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Global improvements */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+#home {
+    padding: 120px 24px;
+}
+
+#home h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto 24px;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+#home a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#courses,
+#about,
+#contact {
+    padding: 80px 24px;
+}
+
+.course-container,
+.features-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.course-card,
+.feature-card {
+    padding: 36px 24px;
+}
+
+#courses h2,
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home {
+        padding: 80px 20px;
+    }
+
+    #courses,
+    #about,
+    #contact {
+        padding: 60px 20px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+#contact {
+    background-color: #eaf4ff;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+#contact-form label {
+    font-weight: 600;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b6c9e5;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#contact-form button {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #1d4ed8;
+}
+
+.footer {
+    background-color: #14213d;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #dbeafe;
+}
+
+.footer-note {
+    margin: 20px auto;
+    max-width: 450px;
+}
